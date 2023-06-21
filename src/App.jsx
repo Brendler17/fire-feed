@@ -16,6 +16,14 @@ export function App() {
             author="Gustavo Brendler"
             content="Primeiro Post"
           />
+          <Post
+            author="Gustavo Brendler"
+            content="Primeiro Post"
+          />
+          <Post
+            author="Gustavo Brendler"
+            content="Primeiro Post"
+          />
         </main>
       </div>
     </>

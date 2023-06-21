@@ -26,15 +26,19 @@ export function Post(props) {
       <div className={styles.content}>
         <p>Fala galeraa 👋</p>
         <p>Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀</p>
-        <p><a href="#">A 👉 jane.design/doctorcare</a></p>
-        <strong><a href="#">#Ignite #React</a></strong>
+        <p>👉{' '}<a href="#">A jane.design/doctorcare</a></p>
+        <p>
+          <a href="#">#Ignite</a>{' '}
+          <a href="#">#React</a>{' '}
+          <a href="#">#GDEV</a>{' '}
+        </p>
       </div>
 
-      <footer>
+      {/* <footer>
         <strong>Deixe seu feedback</strong>
         <textarea name="" id="" cols="30" rows="10"></textarea>
         <button>Publicar</button>
-      </footer>
+      </footer> */}
 
     </article>
   )
