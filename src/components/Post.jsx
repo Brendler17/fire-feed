@@ -34,11 +34,11 @@ export function Post(props) {
         </p>
       </div>
 
-      {/* <footer>
+      <form className={styles.commentForm}>
         <strong>Deixe seu feedback</strong>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <button>Publicar</button>
-      </footer> */}
+        <textarea placeholder="Deixe um comentário"/>
+        <button type="submit">Publicar</button>
+      </form>
 
     </article>
   )
