@@ -67,9 +67,6 @@
 }
 
 .commentContainer footer {
-  color: var(--gray-400);
-  font-size: 0.875rem;
-  font-weight: bold;
   margin-top: 1rem;
 }
 
@@ -77,6 +74,8 @@
   background: transparent;
   border: 0;
   color: var(--gray-400);
+  font-size: 0.875rem;
+  font-weight: bold;
   cursor: pointer;
   border-radius: 8px;
 
