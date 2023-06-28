@@ -4,12 +4,6 @@
   gap: 1rem;
 }
 
-.avatar {
-  height: 3rem;
-  width: 3rem;
-  border-radius: 8px;
-}
-
 .commentContainer {
   flex: 1;
 }
