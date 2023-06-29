@@ -1,39 +1,48 @@
+import { format, formatDistanceToNow } from 'date-fns';
+import ptBR from 'date-fns/locale/pt-BR';
 import { Comment } from "./Comment";
 import { Avatar } from "./Avatar";
 
 import styles from "./Post.module.css";
 
-export function Post(props) {
-  // console.log(props);
+export function Post({ author, publishedAt, content }) {
+
+  const publishedDateFormatted = format(publishedAt, "dd 'de' LLLL 'às' HH':'mm'h'", {
+    locale: ptBR
+  });
+
+  const publishedDateRelativeToNow = formatDistanceToNow(publishedAt, {
+    locale: ptBR,
+    addSuffix: true
+  });
+
   return (
     <article className={styles.postContainer}>
 
       <header>
         <div className={styles.author}>
-          <Avatar src="https://github.com/Brendler17.png" />
+          <Avatar src={author.avatarUrl} />
 
           <div className={styles.authorInfo}>
-            <strong>Gustavo Brendler</strong>
-            <span>Desenvolvedor Front-End</span>
+            <strong>{author.name}</strong>
+            <span>{author.job}</span>
           </div>
         </div>
         <time
-          title="19 de Junho às 09:51h"
-          dateTime="2023-06-19 09:51:13"
+          title={publishedDateFormatted}
+          dateTime={publishedAt.toISOString()}
         >
-          Publicado há 2h
+          {publishedDateRelativeToNow}
         </time>
       </header>
 
       <div className={styles.content}>
-        <p>Salve dev's 👋</p>
-        <p>Acabei de subir mais um projeto no meu github. É o primeiro projeto do Ignite, treinamento da Rocketseat. O nome do projeto é Fire Feed! 🔥</p>
-        <p>👉{' '}<a href="#">github.com/Brendler17/fire-feed</a></p>
-        <p>
-          <a href="#">#Ignite</a>{' '}
-          <a href="#">#React</a>{' '}
-          <a href="#">#Rocketseat</a>{' '}
-        </p>
+        {content.map(line => {
+          switch (line.type) {
+            case "paragraph": return <p>{line.content}</p>;
+            case "link": return <p><a href="#">{line.content}</a></p>;
+          }
+        })}
       </div>
 
       <form className={styles.commentForm}>

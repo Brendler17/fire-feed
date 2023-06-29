@@ -13,7 +13,7 @@ const posts = [
       name: "Gustavo Brendler",
       job: "Desenvolvedor Front-End"
     },
-    publishedAt: new Date('2023-06-20 20:00:00'),
+    publishedAt: new Date('2023-06-28 23:31:00'),
     content: [
       { type: "paragraph", content: "Fala pessoal!" },
       { type: "paragraph", content: "Acabei de subir mais um projeto no meu github." },
@@ -25,8 +25,8 @@ const posts = [
     id: 2,
     author: {
       avatarUrl: "https://github.com/diego3g.png",
-      name: "Renatinho Sampoerna",
-      job: "Desenvolvedor Back-End"
+      name: "Diego Fernandes",
+      job: "CTO @Rocketseat"
     },
     publishedAt: new Date('2023-06-24 20:00:00'),
     content: [
@@ -40,8 +40,8 @@ const posts = [
     id: 3,
     author: {
       avatarUrl: "https://github.com/maykbrito.png",
-      name: "Julho Agostos",
-      job: "Desenvolvedor Full-Stack"
+      name: "Mayk Brito",
+      job: "Educador @Rocketseat"
     },
     publishedAt: new Date('2023-06-25 20:00:00'),
     content: [
