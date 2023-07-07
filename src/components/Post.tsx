@@ -87,8 +87,13 @@ export function Post({ post }: PostProps) {
       <div className={styles.content}>
         {post.content.map(line => {
           switch (line.type) {
-            case "paragraph": return <p key={line.content}>{line.content}</p>;
-            case "link": return <p key={line.content}><a href="#">{line.content}</a></p>;
+            case "paragraph": return (<p key={line.content}>{line.content}</p>);
+            case "link": return (
+              <p key={line.content}>
+                <a href={"https://" + line.content}>
+                  {line.content}
+                </a>
+              </p>);
           }
         })}
       </div>

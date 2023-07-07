@@ -34,10 +34,9 @@ const posts: Post[] = [
     },
     publishedAt: new Date('2023-06-24 20:00:00'),
     content: [
-      { type: "paragraph", content: "Fala pessoal!" },
-      { type: "paragraph", content: "Acabei de subir mais um projeto no meu github." },
-      { type: "paragraph", content: "É o primeiro projeto do Ignite, treinamento da Rocketseat. O nome do projeto é Fire Feed! 🔥" },
-      { type: "link", content: "github.com/Brendler17/fire-feed" },
+      { type: "paragraph", content: "Fala dev!" },
+      { type: "paragraph", content: "Estou escrevendo o conteúdo mais completo que já fiz sobre Server Components no React ⚛️." },
+      { type: "link", content: "rocketseat.com.br/newsletter" },
     ]
   },
   {
@@ -49,10 +48,9 @@ const posts: Post[] = [
     },
     publishedAt: new Date('2023-06-25 20:00:00'),
     content: [
-      { type: "paragraph", content: "Fala pessoal!" },
-      { type: "paragraph", content: "Acabei de subir mais um projeto no meu github." },
-      { type: "paragraph", content: "É o primeiro projeto do Ignite, treinamento da Rocketseat. O nome do projeto é Fire Feed! 🔥" },
-      { type: "link", content: "github.com/Brendler17/fire-feed" },
+      { type: "paragraph", content: "Acabei de completar o quiz de React da Rocketseat com um nível Proficiente! ⚛️" },
+      { type: "paragraph", content: "E aí, bora testar seus conhecimentos em React também? 👀" },
+      { type: "link", content: "quiz.rocketseat.com.br/quizzes/react" },
     ]
   }
 ];
